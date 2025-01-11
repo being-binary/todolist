@@ -79,7 +79,7 @@ const TodoList = () => {
                 <tbody>
                     {
                         list.map((task, index) => {
-                            return <tr key={index} className={`bg-white dark:bg-gray-800 px-6 py-4 text-xl ${task.status == 'pending' ? 'bg-gray-400' : task.status == 'completed' ? 'bg-green-400' : 'bg-yellow-400'}`}>
+                            return <tr key={index} className={` px-6 py-4 text-xl ${task.status == 'pending' ? 'bg-gray-400' : task.status == 'completed' ? 'bg-green-400' : 'bg-yellow-400'}`}>
                                 <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                     {index + 1}
                                 </th>
